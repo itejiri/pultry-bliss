@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 130 | HTML Form - User Poll</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Allan:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Alice, Allan;
+    font-size: 1.2em;
+    color: #81D6E3;
+    background: #0B3954;
+}
+header {
+	margin: 1rem auto 0;
+	display: flex;
+    grid-template-columns: 1fr 1fr 2fr;
+	align-items: flex;
+    padding: 10px;
+	max-width: 1250px;
+    color: olive;
+    font-size: 0.8em;
+    grid-gap: 500px;
+    float: right;
+}
+
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: #4cb;
+    text-align: center;
+}
+h2 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: #0B3954;
+    text-align: center;
+}
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #4CB5;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Allan, Alice;
+}
+
+label {
+    text-align: left; /*it was right */
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+.navigation {
+	display: inline-table;
+	list-style: none;
+}
+.navigation a {
+	color: orange;
+	padding: 20px;
+	text-decoration: none;
+}
+footer {
+    margin: 1rem auto 0;
+    width: 6500px;
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    border-top: 1px solid #ccc;
+	width: auto;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
+}
+
+.column2 {
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <a href="http://127.0.0.1:5500/Abigrow.html"> Abigrow</a>
+        <nav>
+            <ul class="navigation">
+                <a href="#">Order Now</a>
+                <a href="http://127.0.0.1:5500/about.html">About</a>
+                <a href="http://127.0.0.1:5500/store_loction.html">Store location</a>
+                <a href="#">Cart</a>
+                <a href="http://127.0.0.1:5500/contact.html">Contact</a>
+                <a href="http://127.0.0.1:5500/customer_signup.html">Sign Up/Login</a>
+            </ul>
+        </nav>
+    </header>
+        <h2>form</h2>
+    </header>
+    <footer>
+        <h1>Customer sign up form</h1>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend> 
+                <div class="form-item column2">
+                <label for="fullname">Fullname:</label>
+                <input type="text" id="fullname" name="fullname">
+                </div>
+                <div class="form-item column2">
+                <label for="useremail">Email:</label>
+                <input type="email" id="useremail" name="useremail">
+                </div>
+                <div class="form-item column2">
+                <label for="contact">Phone Number:</label>
+                <input type="contact" id="contact" name="contact">
+                </div>
+                <div class="form-item column2">
+                <label for="address">Address:</label>
+                <input type="address" id="address" name="address">
+                </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+        <p>©2024 | Poultry Bliss</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Abigrow</title>
+    </head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2em; /* 1.2em*/
+    color: black;
+    background: white;
+}
+header {
+	margin: 1rem auto 0;
+	display: flex;
+    grid-template-columns: 1fr 1fr 2fr;
+	align-items: flex;
+    padding: 10px;
+	max-width: 1250px;
+    color: darkgreen;
+    font-size: 0.8em;
+    grid-gap: 500px;
+    float: right;
+}
+h2 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: orange;
+    text-align: center;
+}
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: white;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+label, input, button, select, textarea {
+    font-family: Allan, Alice;
+}
+
+label {
+    text-align: left; /*it was right */
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: whitesmoke;
+    color: orange;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+.navigation {
+	display: inline-table;
+	list-style: none;
+}
+.navigation a {
+	color: orange;
+	padding: 20px;
+	text-decoration: none;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center; /*center*/
+    font-size: 0.8em;
+    color: black;
+    border-top: 1px solid #000;
+	width: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: darkgreen;
+}
+
+</style>
+    <header>
+        <h3>Abigrow</h3>
+        <nav>
+            <ul class="navigation">
+                <a href="#">Order Now</a>
+                <a href="http://127.0.0.1:5500/about.html">About</a>
+                <a href="http://127.0.0.1:5500/store_loction.html">Store location</a>
+                <a href="#">Cart</a>
+                <a href="http://127.0.0.1:5500/contact.html">Contact</a>
+                <a href="http://127.0.0.1:5500/customer_signup.html">Sign Up/Login</a>
+            </ul>
+        </nav>
+    </header>
+    <body>
+    &nbsp <img src="images/egg2.jpg" width="1250" height="500" alt="">
+    <h2 align="center">Abigrow,</h2>
+    <h2 align="center">Wherever you go</h2>
+    <p align="center"><b><i>Ordering From</i></b></p>
+        <form>
+            <fieldset>
+        <div class="form-item column2">
+        <label for="orderaddress">Order Address:</label>
+        <input type="orderaddress" id="address" name="orderaddress"></div>
+            </fieldset>
+        <button type="submit">Submit</button>
+        </form>
+    <footer> 
+        <h4>Contact   | Orders</h4>
+        <p>Poultry Bliss, Udu road, Delta State, Nigeria</p>
+        <p>INFO@POULTRYBLISS.COM</p>
+        <p>For your orders, call 07013909262</p>
+        <p>Email: <a href="mailto:">tejiritohabru04@gmail.com</a></p>
+    <p>© 2024, Poultry Bliss</p>
+    </footer>
+</html>
